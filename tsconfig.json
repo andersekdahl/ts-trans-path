@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "module": "es6",
+        "target": "es6",
+        "paths": {
+            "my-lib/*": ["src/*"]
+        },
+        "outDir": "./dist/",
+        "plugins": [
+            {
+                "transform": "@zerollup/ts-transform-paths",
+                "exclude": ["*"]
+            }
+        ]
+    }
+}
